@@ -174,6 +174,7 @@ module.exports = function (sequelize, Sequelize) {
                         .then(() => console.log('Password has been changed ***'))
                         .catch(error => reject(error))
                 }
+                
             },
             getterMethods: {
                 fullName() {

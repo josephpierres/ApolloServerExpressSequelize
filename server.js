@@ -5,7 +5,8 @@ const schema = require('./schema');
 const models = require('./models');
 const app = express();
 const sequelize = require('sequelize');
-
+require('dotenv').config();
+/*
 // ****** allow cross-origin requests code START ****** //
 //app.use(cors()); // uncomment this to enable all CORS and delete cors(corsOptions) in below code
 var allowedOrigins = process.env.allowedOrigins.split(',');
@@ -23,7 +24,7 @@ app.use(cors({
     }
 }));
 // ****** allow cross-origin requests code END ****** //
-
+*/
 const server = new ApolloServer({
   schema,
   context: {models}

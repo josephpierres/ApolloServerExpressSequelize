@@ -44,6 +44,10 @@ type Mutation {
 }`;
   
 const aviationSchema =  [typeDefs, mutations];
+
+////
+//on commence avec les resolvers
+///
 const resolvers = {
   Pilote: {
       vols: async (root, args, { models }, info) =>  root.getVols(), // has many Vols
